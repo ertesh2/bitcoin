@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="BitcoinApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BitcoinApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>
+        <Style x:Name="MyTextStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="24" />
+        </Style>
+
+        <!--<x:Boolean x:Key="True">True</x:Boolean>
+        <x:Boolean x:Key="False">False</x:Boolean>
+        <local:KeyValueConverter x:Key="StartStopConverter">
+            <local:KeyValuePair Key="{StaticResource False}" Value="Start"/>
+            <local:KeyValuePair Key="{StaticResource True}" Value="Stop"/>
+        </local:KeyValueConverter>-->
+    </Page.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="0" 
+                   Text="Current value:" 
+                   Style="{ThemeResource MyTextStyle}"
+                   />
+        <TextBlock Grid.Column="1"
+                   Margin="6,0,0,0"
+                   Text="{Binding PriceText}"
+                   Style="{ThemeResource MyTextStyle}"
+                   />
+    </Grid>
+</Page>
