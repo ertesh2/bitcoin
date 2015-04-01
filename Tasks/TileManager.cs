@@ -4,9 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BitcoinApp.ViewModel
+namespace Tasks
 {
-    using Windows.Data.Xml.Dom;
     using Windows.UI.Notifications;
 
     class TileManager

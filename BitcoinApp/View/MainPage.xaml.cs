@@ -17,7 +17,7 @@ using Windows.UI.Xaml.Navigation;
 
 namespace BitcoinApp
 {
-    using System.Threading.Tasks;
+    using Windows.ApplicationModel.Background;
 
     using BitcoinApp.ViewModel;
 
@@ -42,13 +42,28 @@ namespace BitcoinApp
         {
             DataContext = new MainViewModel();
 
-            // TODO: Prepare page for display here.
-
             // TODO: If your application contains multiple pages, ensure that you are
             // handling the hardware Back button by registering for the
             // Windows.Phone.UI.Input.HardwareButtons.BackPressed event.
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
+        }
+
+        private async void OnButtonClick(object sender, RoutedEventArgs e)
+        {
+            const string name = "UpdateTask";
+            const string taskEntryPoint = "Tasks.SampleBackgroundTask";
+            var trigger = new TimeTrigger(30, false);
+
+            await BackgroundExecutionManager.RequestAccessAsync();
+
+            var builder = new BackgroundTaskBuilder();
+
+            builder.Name = name;
+            builder.TaskEntryPoint = taskEntryPoint;
+            builder.SetTrigger(trigger);
+
+            BackgroundTaskRegistration task = builder.Register();
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="fcbcaadb-7842-43b4-a5b5-25a9851dd3a1" Publisher="CN=maandrej" Version="1.0.0.0" />
-  <mp:PhoneIdentity PhoneProductId="fcbcaadb-7842-43b4-a5b5-25a9851dd3a1" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="0a8260ca-5277-4eb4-a4ef-f33038ecf01a" Publisher="CN=maandrej" Version="1.0.0.0" />
+  <mp:PhoneIdentity PhoneProductId="0a8260ca-5277-4eb4-a4ef-f33038ecf01a" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>BitcoinApp</DisplayName>
     <PublisherDisplayName>maandrej</PublisherDisplayName>
@@ -22,7 +22,7 @@
         <m3:SplashScreen Image="Assets\SplashScreen.png" />
       </m3:VisualElements>
       <Extensions>
-        <Extension Category="windows.backgroundTasks" EntryPoint="BitcoinApp.MyBackgroundTask">
+        <Extension Category="windows.backgroundTasks" EntryPoint="Tasks.SampleBackgroundTask">
           <BackgroundTasks>
             <Task Type="timer" />
           </BackgroundTasks>

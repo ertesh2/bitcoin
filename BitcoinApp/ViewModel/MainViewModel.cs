@@ -8,8 +8,6 @@ namespace BitcoinApp.ViewModel
     {
         private double _price;
 
-        private TileManager _tileManager;
-
         public MainViewModel()
         {
             _price = 1.5;

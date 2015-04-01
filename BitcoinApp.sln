@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitcoinApp", "BitcoinApp\BitcoinApp.csproj", "{82A7AD9C-8B2A-400C-9733-081D62254490}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasks", "Tasks\Tasks.csproj", "{60926B15-828D-49AC-9691-C0D5968D7915}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,15 @@ Global
 		{82A7AD9C-8B2A-400C-9733-081D62254490}.Release|x86.ActiveCfg = Release|x86
 		{82A7AD9C-8B2A-400C-9733-081D62254490}.Release|x86.Build.0 = Release|x86
 		{82A7AD9C-8B2A-400C-9733-081D62254490}.Release|x86.Deploy.0 = Release|x86
+		{60926B15-828D-49AC-9691-C0D5968D7915}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60926B15-828D-49AC-9691-C0D5968D7915}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60926B15-828D-49AC-9691-C0D5968D7915}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{60926B15-828D-49AC-9691-C0D5968D7915}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{60926B15-828D-49AC-9691-C0D5968D7915}.Debug|x86.Build.0 = Debug|Any CPU
+		{60926B15-828D-49AC-9691-C0D5968D7915}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60926B15-828D-49AC-9691-C0D5968D7915}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60926B15-828D-49AC-9691-C0D5968D7915}.Release|ARM.ActiveCfg = Release|Any CPU
+		{60926B15-828D-49AC-9691-C0D5968D7915}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
