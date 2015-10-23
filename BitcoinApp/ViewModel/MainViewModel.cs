@@ -1,49 +1,25 @@
-﻿
+﻿using GalaSoft.MvvmLight;
+using System.ComponentModel;
+
 namespace BitcoinApp.ViewModel
 {
-    using System.ComponentModel;
-    using System.Runtime.CompilerServices;
-
-    class MainViewModel : INotifyPropertyChanged
+    class MainViewModel : ViewModelBase
     {
-        private double _price;
-
         public MainViewModel()
         {
             _price = 1.5;
         }
 
+        private double _price;
         public double Price
         {
-            get
-            {
-                return _price;
-            }
-            set
-            {
-                _price = value;
-                NotifyPropertyChanged("Price");
-            }
+            get { return _price; }
+            set { Set(ref _price, value); }
         }
 
         public string PriceText
         {
-            get
-            {
-                return _price.ToString();
-            }
+            get { return _price.ToString(); }
         }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void NotifyPropertyChanged(string propertyName)
-        {
-            PropertyChangedEventHandler handler = PropertyChanged;
-            if (handler != null)
-            {
-                handler(this, new PropertyChangedEventArgs(propertyName));
-            }
-        }
-
     }
 }
